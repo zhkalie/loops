@@ -26,8 +26,7 @@
 //void setup() {
 //  size(800, 800);
 //  noStroke();
-//  int cellSize = width / cells; // Calculate square size
-
+//  int cellSize = width / cells; 
 //  for (int x = 0; x < 50; x++) { // Outer loop for rows
 //    for (int y = 0; y < 50; y++) { // Inner loop for columns
       
@@ -65,27 +64,27 @@
 //    }
 //  }
 
-size(800, 600);
-background(30);
+//size(800, 600);
+//background(30);
 
-for (int y = 0; y <= height; y += 50) {
-  int offset = ( (y / 50) % 2 == 0 ) ? 0 : 50;
+//for (int y = 0; y <= height; y += 50) {
+//  int offset = ( (y / 50) % 2 == 0 ) ? 0 : 50;
 
-  for (int x = 0; x <= width; x += 100) {
-    rect(x + offset, y, 50, 50);
-  }
-}
+//  for (int x = 0; x <= width; x += 100) {
+//    rect(x + offset, y, 50, 50);
+//  }
+//}
 
 size(800, 600);
   background(255);
   int offset = 0;
  
-  for (int y = 50; y <= height; y += 100) {
-    for (int x = 50; x <= width; x += 90) {
+  for (int y = 0; y <= height; y += 40) {
+    for (int x = 0; x <= width; x += 80) {
       noFill();
       stroke(0);
       strokeWeight(2);
-      circle(x - offset, y, 150);
+      circle(x + offset, y, 100);
     }
     if (offset == 0) offset = 40;
     else offset = 0;
