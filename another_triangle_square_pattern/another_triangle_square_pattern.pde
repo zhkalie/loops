@@ -15,10 +15,13 @@ for (int y = 0; y <= height; y += 80) {
 void thing(int x,int y){
   translate(x, y);
   fill(217, 221, 222);
-  triangle(0, 0, 0, 50, 50, 50);
-  
-  
-  
-  
-  
+  triangle(0, 0, 0, 50, 50, 50);  
 }
+
+  size(800, 600);
+  background(30);
+  for (int y = 0; y <= height; y += 50) {
+    for (int x = 0; x < width; x += 50) {
+    triangle(x, x, 50, 50, x, 50);
+  }
+  }
